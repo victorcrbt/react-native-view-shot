@@ -111,7 +111,7 @@ public class RNViewShotModule extends ReactContextBaseJavaModule {
         captureRef(-1, options, promise);
     }
 
-    private static final String TEMP_FILE_PREFIX = "ReactNative-snapshot-image";
+    private static final String TEMP_FILE_PREFIX = "/print/ReactNative-snapshot-image";
 
     /**
      * Asynchronous task that cleans up cache dirs (internal and, if available, external) of cropped
@@ -164,8 +164,8 @@ public class RNViewShotModule extends ReactContextBaseJavaModule {
      */
     @NonNull
     private File createTempFile(@NonNull final Context context, @NonNull final String ext) throws IOException {
-        final File externalCacheDir = context.getExternalCacheDir() + "/print";
-        final File internalCacheDir = context.getCacheDir() + "/print";
+        final File externalCacheDir = context.getExternalCacheDir();
+        final File internalCacheDir = context.getCacheDir();
         final File cacheDir;
 
         if (externalCacheDir == null && internalCacheDir == null) {
