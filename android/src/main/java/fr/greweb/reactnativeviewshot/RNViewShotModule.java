@@ -164,9 +164,17 @@ public class RNViewShotModule extends ReactContextBaseJavaModule {
      */
     @NonNull
     private File createTempFile(@NonNull final Context context, @NonNull final String ext) throws IOException {
-        final File externalCacheDir = context.getExternalCacheDir();
-        final File internalCacheDir = context.getCacheDir();
+        final File externalCacheDir = new File(context.getExternalCacheDir().getAbsoluteFile() + "/print");
+        final File internalCacheDir = new File(context.getCacheDir().getAbsoluteFile() + "/print");
         final File cacheDir;
+
+        if (!internalCacheDir.exists()) {
+            internalCacheDir.mkdirs();
+        }
+
+        if (!externalCacheDir.exists()) {
+            externalCacheDir.mkdirs();
+        }
 
         if (externalCacheDir == null && internalCacheDir == null) {
             throw new IOException("No cache directory available");
