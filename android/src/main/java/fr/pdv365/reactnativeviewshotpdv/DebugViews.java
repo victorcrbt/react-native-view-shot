@@ -1,4 +1,4 @@
-package fr.greweb.reactnativeviewshot;
+package fr.greweb.reactnativeviewshotpdv;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

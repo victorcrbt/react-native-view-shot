@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from "react";
 import { View, NativeModules, Platform, findNodeHandle } from "react-native";
-const { RNViewShot } = NativeModules;
+const { RNViewShotPdv } = NativeModules;
 import type { ViewStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet";
 import type { LayoutEvent } from "react-native/Libraries/Types/CoreEventTypes";
 
@@ -16,9 +16,9 @@ type Options = {
   snapshotContentContainer: boolean
 };
 
-if (!RNViewShot) {
+if (!RNViewShotPdv) {
   console.warn(
-    "react-native-view-shot: NativeModules.RNViewShot is undefined. Make sure the library is linked on the native side."
+    "react-native-view-shot: NativeModules.RNViewShotPdv is undefined. Make sure the library is linked on the native side."
   );
 }
 
@@ -93,9 +93,9 @@ function validateOptions(
 }
 
 export function ensureModuleIsLoaded() {
-  if (!RNViewShot) {
+  if (!RNViewShotPdv) {
     throw new Error(
-      "react-native-view-shot: NativeModules.RNViewShot is undefined. Make sure the library is linked on the native side."
+      "react-native-view-shot: NativeModules.RNViewShotPdv is undefined. Make sure the library is linked on the native side."
     );
   }
 }
@@ -134,7 +134,7 @@ export function captureRef<T: React$ElementType>(
         errors.map(e => `- ${e}`).join("\n")
     );
   }
-  return RNViewShot.captureRef(view, options);
+  return RNViewShotPdv.captureRef(view, options);
 }
 
 export function releaseCapture(uri: string): void {
@@ -143,7 +143,7 @@ export function releaseCapture(uri: string): void {
       console.warn("Invalid argument to releaseCapture. Got: " + uri);
     }
   } else {
-    RNViewShot.releaseCapture(uri);
+    RNViewShotPdv.releaseCapture(uri);
   }
 }
 
@@ -156,7 +156,7 @@ export function captureScreen(optionsObject?: Options): Promise<string> {
         errors.map(e => `- ${e}`).join("\n")
     );
   }
-  return RNViewShot.captureScreen(options);
+  return RNViewShotPdv.captureScreen(options);
 }
 
 type Props = {

@@ -1,5 +1,5 @@
 
-package fr.greweb.reactnativeviewshot;
+package fr.greweb.reactnativeviewshotpdv;
 
 import android.app.Activity;
 import android.content.Context;
@@ -24,16 +24,16 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.Map;
 
-import fr.greweb.reactnativeviewshot.ViewShot.Formats;
-import fr.greweb.reactnativeviewshot.ViewShot.Results;
+import fr.greweb.reactnativeviewshotpdv.ViewShot.Formats;
+import fr.greweb.reactnativeviewshotpdv.ViewShot.Results;
 
-public class RNViewShotModule extends ReactContextBaseJavaModule {
+public class RNViewShotPdvModule extends ReactContextBaseJavaModule {
 
     public static final String RNVIEW_SHOT = "RNViewShot";
 
     private final ReactApplicationContext reactContext;
 
-    public RNViewShotModule(ReactApplicationContext reactContext) {
+    public RNViewShotPdvModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
     }
