@@ -12,7 +12,7 @@ using Windows.Storage.Streams;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media.Imaging;
 
-namespace RNViewShot
+namespace RNViewShotPdv
 {
     public class ViewShot : IUIBlock
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{1DD45D00-DDF4-43B4-AB28-F98E6DC325B5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RNViewShot.Net46</RootNamespace>
-    <AssemblyName>RNViewShot.Net46</AssemblyName>
+    <RootNamespace>RNViewShotPdv.Net46</RootNamespace>
+    <AssemblyName>RNViewShotPdv.Net46</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

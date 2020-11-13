@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNViewShot.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNViewShot.m */; };
+		B3E7B58A1CC2AC0600A0062D /* RNViewShotPdv.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNViewShotPdv.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNViewShot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNViewShot.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNViewShot.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = RNViewShot.h; sourceTree = "<group>"; tabWidth = 2; };
-		B3E7B5891CC2AC0600A0062D /* RNViewShot.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = RNViewShot.m; sourceTree = "<group>"; tabWidth = 2; };
+		B3E7B5881CC2AC0600A0062D /* RNViewShotPdv.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = RNViewShotPdv.h; sourceTree = "<group>"; tabWidth = 2; };
+		B3E7B5891CC2AC0600A0062D /* RNViewShotPdv.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = RNViewShotPdv.m; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +50,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNViewShot.h */,
-				B3E7B5891CC2AC0600A0062D /* RNViewShot.m */,
+				B3E7B5881CC2AC0600A0062D /* RNViewShotPdv.h */,
+				B3E7B5891CC2AC0600A0062D /* RNViewShotPdv.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			indentWidth = 2;
@@ -61,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNViewShot */ = {
+		58B511DA1A9E6C8500147676 /* RNViewShotPdv */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNViewShot" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNViewShotPdv" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -73,7 +73,7 @@
 			);
 			dependencies = (
 			);
-			name = RNViewShot;
+			name = RNViewShotPdv;
 			productName = RCTDataManager;
 			productReference = 134814201AA4EA6300B7C361 /* libRNViewShot.a */;
 			productType = "com.apple.product-type.library.static";
@@ -92,7 +92,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNViewShot" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNViewShotPdv" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -104,7 +104,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNViewShot */,
+				58B511DA1A9E6C8500147676 /* RNViewShotPdv */,
 			);
 		};
 /* End PBXProject section */
@@ -114,7 +114,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNViewShot.m in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* RNViewShotPdv.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +206,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNViewShot;
+				PRODUCT_NAME = RNViewShotPdv;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -222,7 +222,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNViewShot;
+				PRODUCT_NAME = RNViewShotPdv;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -230,7 +230,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNViewShot" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNViewShotPdv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -239,7 +239,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNViewShot" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNViewShotPdv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,

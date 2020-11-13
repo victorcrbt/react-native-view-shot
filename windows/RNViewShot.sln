@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RNViewShot", "RNViewShot\RNViewShot.csproj", "{391A35D0-FEBA-11E6-9171-BD5177E581B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RNViewShotPdv", "RNViewShotPdv\RNViewShotPdv.csproj", "{391A35D0-FEBA-11E6-9171-BD5177E581B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactNative", "..\node_modules\react-native-windows\ReactWindows\ReactNative\ReactNative.csproj", "{C7673AD5-E3AA-468C-A5FD-FA38154E205C}"
 EndProject
@@ -10,7 +10,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChakraBridge", "..\node_mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactNative.Net46", "..\node_modules\react-native-windows\ReactWindows\ReactNative.Net46\ReactNative.Net46.csproj", "{22CBFF9C-FE36-43E8-A246-266C7635E662}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RNViewShot.Net46", "RNViewShot.Net46\RNViewShot.Net46.csproj", "{1DD45D00-DDF4-43B4-AB28-F98E6DC325B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RNViewShotPdv.Net46", "RNViewShotPdv.Net46\RNViewShotPdv.Net46.csproj", "{1DD45D00-DDF4-43B4-AB28-F98E6DC325B5}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

@@ -1,5 +1,4 @@
-
-package fr.greweb.reactnativeviewshotpdv;
+package fr.pdv365.reactnativeviewshotpdv;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -13,7 +12,7 @@ import com.facebook.react.bridge.JavaScriptModule;
 public class RNViewShotPdvPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNViewShotModule(reactContext));
+      return Arrays.<NativeModule>asList(new RNViewShotPdvModule(reactContext));
     }
 
     // Deprecated RN 0.47

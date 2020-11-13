@@ -1,4 +1,4 @@
-package fr.greweb.reactnativeviewshotpdv;
+package fr.pdv365.reactnativeviewshotpdv;
 
 import android.app.Activity;
 import android.graphics.Bitmap;

@@ -5,7 +5,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-namespace RNViewShot
+namespace RNViewShotPdv
 {
     /// <summary>
     /// A module that allows JS to share data.
@@ -30,17 +30,12 @@ namespace RNViewShot
         {
             get
             {
-                return "RNViewShot";
+                return "RNViewShotPdv";
             }
         }
 
         [ReactMethod]
-        public void releaseCapture (string uri) {
-          // TODO implement me
-        }
-
-        [ReactMethod]
-        public void captureRef(int tag, JObject options, IPromise promise)
+        public void takeSnapshot(int tag, JObject options, IPromise promise)
         {
             string format = options["format"] != null ? options.Value<string>("format") : "png";
             double quality = options["quality"] != null ? options.Value<double>("quality") : 1.0;

@@ -1,4 +1,4 @@
-#import "RNViewShot.h"
+#import "RNViewShotPdv.h"
 #import <AVFoundation/AVFoundation.h>
 #import <React/RCTLog.h>
 #import <React/UIView+React.h>
@@ -11,7 +11,7 @@
 #endif
 #import <React/RCTBridge.h>
 
-@implementation RNViewShot
+@implementation RNViewShotPdv
 
 RCT_EXPORT_MODULE()
 
