@@ -8,7 +8,7 @@
  * @desc react-native-view-shot.d.ts
  */
 
-declare module 'react-native-view-shot' {
+declare module 'react-native-view-shot-pdv' {
     import { Component, ReactInstance, RefObject } from 'react'
     import { ViewStyle } from 'react-native'
 
