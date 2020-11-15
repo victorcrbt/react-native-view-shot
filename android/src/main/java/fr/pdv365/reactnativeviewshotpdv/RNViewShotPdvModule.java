@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import androidx.annotation.NonNull;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.os.Environment;
 
 import com.facebook.react.bridge.GuardedAsyncTask;
 import com.facebook.react.bridge.Promise;
