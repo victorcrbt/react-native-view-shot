@@ -1,6 +1,6 @@
 {
   "name": "react-native-view-shot-pdv",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Capture a React Native view to an image",
   "main": "src/index.js",
   "types": "src/index.d.ts",
