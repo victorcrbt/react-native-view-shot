@@ -100,6 +100,12 @@ export function ensureModuleIsLoaded() {
   }
 }
 
+export function clearPrintsFolder() {
+  ensureModuleIsLoaded();
+
+  RNViewShotPdv.clearPrintsFolder();
+}
+
 export function captureRef<T: React$ElementType>(
   view: number | ?View | React$Ref<T>,
   optionsObject?: Object
@@ -136,6 +142,7 @@ export function captureRef<T: React$ElementType>(
   }
   return RNViewShotPdv.captureRef(view, options);
 }
+
 
 export function releaseCapture(uri: string): void {
   if (typeof uri !== "string") {

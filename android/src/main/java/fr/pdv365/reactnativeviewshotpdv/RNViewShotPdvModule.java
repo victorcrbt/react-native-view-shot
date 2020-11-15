@@ -66,6 +66,34 @@ public class RNViewShotPdvModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void clearPrintsFolder(Promise promise) {
+        try {
+            final File externalCacheDir = new File(getReactApplicationContext().getExternalCacheDir().getAbsoluteFile() + "/print");
+            final File internalCacheDir = new File(getReactApplicationContext().getCacheDir().getAbsoluteFile() + "/print");
+
+            if (externalCacheDir.exists()) {
+                File[] files = externalCacheDir.listFiles();
+
+                if (files != null) {
+                    for (File file : files)
+                        file.delete();
+                }
+            }
+
+            if (internalCacheDir.exists()) {
+                File[] files = internalCacheDir.listFiles();
+
+                if (files != null) {
+                    for (File file : files)
+                        file.delete();
+                }
+            }
+        } catch (final Throwable ex) {
+            promise.reject(ViewShot.ERROR_UNABLE_TO_SNAPSHOT, "Error deleting files");
+        }
+    }
+
+    @ReactMethod
     public void captureRef(int tag, ReadableMap options, Promise promise) {
         final ReactApplicationContext context = getReactApplicationContext();
         final DisplayMetrics dm = context.getResources().getDisplayMetrics();

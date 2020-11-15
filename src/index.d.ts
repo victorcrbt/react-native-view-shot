@@ -79,6 +79,11 @@ declare module 'react-native-view-shot-pdv' {
     }
 
     /**
+     * This method delete all the files inside the "print" directory located on the caches folder.
+     */
+    export function clearPrintsFolder(): Promise<void>;
+
+    /**
      * lower level imperative API
      *
      * @param {number | React.ReactInstance | RefObject} viewRef
