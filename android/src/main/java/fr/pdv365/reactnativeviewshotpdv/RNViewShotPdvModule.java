@@ -68,20 +68,10 @@ public class RNViewShotPdvModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void clearPrintsFolder(Promise promise) {
         try {
-            final File externalCacheDir = new File(getReactApplicationContext().getExternalCacheDir().getAbsoluteFile() + "/print");
-            final File internalCacheDir = new File(getReactApplicationContext().getCacheDir().getAbsoluteFile() + "/print");
+            final File printsDir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Download/print");
 
-            if (externalCacheDir.exists()) {
-                File[] files = externalCacheDir.listFiles();
-
-                if (files != null) {
-                    for (File file : files)
-                        file.delete();
-                }
-            }
-
-            if (internalCacheDir.exists()) {
-                File[] files = internalCacheDir.listFiles();
+            if (printsDir.exists()) {
+                File[] files = printsDir.listFiles();
 
                 if (files != null) {
                     for (File file : files)
@@ -191,32 +181,13 @@ public class RNViewShotPdvModule extends ReactContextBaseJavaModule {
      */
     @NonNull
     private File createTempFile(@NonNull final Context context, @NonNull final String ext) throws IOException {
-        final File externalCacheDir = new File(context.getExternalCacheDir().getAbsoluteFile() + "/print");
-        final File internalCacheDir = new File(context.getCacheDir().getAbsoluteFile() + "/print");
-        final File cacheDir;
+        final File printsDir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Download/print");
 
-        if (!internalCacheDir.exists()) {
-            internalCacheDir.mkdirs();
-        }
-
-        if (!externalCacheDir.exists()) {
-            externalCacheDir.mkdirs();
-        }
-
-        if (externalCacheDir == null && internalCacheDir == null) {
-            throw new IOException("No cache directory available");
-        }
-
-        if (externalCacheDir == null) {
-            cacheDir = internalCacheDir;
-        } else if (internalCacheDir == null) {
-            cacheDir = externalCacheDir;
-        } else {
-            cacheDir = externalCacheDir.getFreeSpace() > internalCacheDir.getFreeSpace() ?
-                    externalCacheDir : internalCacheDir;
+        if (!printsDir.exists()) {
+            printsDir.mkdirs();
         }
 
         final String suffix = "." + ext;
-        return File.createTempFile(TEMP_FILE_PREFIX, suffix, cacheDir);
+        return File.createTempFile(TEMP_FILE_PREFIX, suffix, printsDir);
     }
 }
